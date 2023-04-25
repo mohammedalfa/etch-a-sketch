@@ -8,6 +8,24 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
+    <div id="header">
+      <div>
+        <label for="squares">Number of squares:</label>
+        <input type="number" min="1" max="100" id="squares" name="squares">
+        <button type="button" id="render">Render</button>
+      </div>
+      <div>
+        <label for="color">Color:</label>
+        <select name="color" id="color">
+          <option value="black" selected>Black</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="white">White</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div>
+    </div>
     <div id="container"></div>
   </body>
 </html>
