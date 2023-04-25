@@ -1,5 +1,5 @@
 const container = document.querySelector("#container");
-let color = "black";
+let color = document.querySelector("#color").value;
 let squares = 0;
 let clicked = false;
 
@@ -10,7 +10,7 @@ squareRender.addEventListener("click", () => {
     if (squares >= 0 && squares <= 100) {
         render(squares);
     } else {
-        alert("Number of squares can't exceed 100!");
+        alert("Number of squares must be positive and can't exceed 100!");
     }
 });
 
